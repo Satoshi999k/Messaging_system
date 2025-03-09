@@ -66,27 +66,36 @@ button:hover {
 
 /* Chat box styling */
 #chat-box {
-    height: 280px;
+    width: 94%;
+    height: 300px; /* Adjust as needed */
     overflow-y: auto;
-    border: 1px solid #ddd;
     padding: 10px;
-    background: #f9f9f9;
+    background: #fff;
     border-radius: 5px;
-    text-align: left;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Message bubbles */
 .message {
-    margin: 8px 0;
-    padding: 6px;
-    border-radius: 5px;
+    max-width: 75%; /* Prevents messages from stretching */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap; /* Keeps new lines */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 .sent {
-    background: #d1e7dd;
+    background-color: #a8e6cf;
+    align-self: flex-end; /* Aligns to right */
     text-align: right;
 }
 
 .received {
-    background: #f8d7da;
+    background-color: #ffcccc;
+    align-self: flex-start; /* Aligns to left */
+    text-align: left;
 }
