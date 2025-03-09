@@ -1,0 +1,92 @@
+/* Centering the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling for login container */
+.login-container {
+    width: 280px; 
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling for chat container */
+.chat-container {
+    width: 350px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Styling input fields, select, and buttons */
+input, button {
+    width: 90%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Ensuring #receiver select has full width */
+#receiver {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    width: 95%;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Chat box styling */
+#chat-box {
+    height: 280px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Message bubbles */
+.message {
+    margin: 8px 0;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.sent {
+    background: #d1e7dd;
+    text-align: right;
+}
+
+.received {
+    background: #f8d7da;
+}
